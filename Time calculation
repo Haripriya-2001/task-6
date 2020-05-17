@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+class time
+{
+public:	
+int hours;
+int minutes;
+int seconds;
+};
+
+int main()
+{
+time t1;
+cout<<"Enter time in hours"<<endl;
+cin>>t1.hours;
+cout<<"Enter time in minutes"<<endl;
+cin>>t1.minutes;
+cout<<"Enter time in seconds"<<endl;
+cin>>t1.seconds;
+cout<<"Time is "<<t1.hours<<"\t"<<t1.minutes<<"\t"<<t1.seconds<<endl;
+cout<<"Total time in seconds is "<<((t1.hours*60*60)+(t1.minutes*60)+t1.seconds)<<endl;
+return 0;
+}
